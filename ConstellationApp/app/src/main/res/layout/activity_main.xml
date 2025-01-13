@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="381dp"
+        android:layout_height="67dp"
+        android:text="请选择您的星座"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/constellationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+        android:text="基本信息:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/personalityTextView"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_marginTop="8dp"
+        android:text="人格特征:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/todayFortuneTextView"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginTop="8dp"
+        android:text="今日运势:"
+        android:textSize="16sp" />
+</LinearLayout>
+
+
+
