@@ -1,25 +1,91 @@
-# XingPing
+# 星萍
 
-XingPing 是一个用 Kotlin 编写的应用程序项目。
+星萍 是一个使用 Jetpack Compose 构建的现代 Android 应用程序。该应用程序提供了用户登录、注册、星座信息查询、个人信息管理等功能，并且具有简洁美观的用户界面。
 
-## 项目简介
+## 主要功能
 
-XingPing 是一个用于 [项目目的或应用场景的简短描述] 的应用程序。该项目旨在 [项目的主要目标或功能]。通过使用最新的 Kotlin 技术和 Android 开发最佳实践，XingPing 提供了 [应用程序的主要功能或特点]。
+### 登录和注册
+- 用户可以通过登录和注册界面进行账户的创建和登录。
+
+### 星座信息查询
+- 用户可以选择星座并查看该星座的基本信息、星座类型及个性特征。
+
+### 个人信息管理
+- 用户可以在“个人信息”界面填写和查看自己的基本信息，包括昵称、生日、性别、MBTI类型等。
+
+### 其他功能
+- 应用提供时钟、日历和随机祝福语显示功能，增加用户体验的趣味性。
 
 ## 安装步骤
 
-请按照以下步骤来设置和运行该项目：
+1. 克隆仓库到本地：
+    ```bash
+    git clone https://github.com/yourusername/ConstellationApp.git
+    cd ConstellationApp
+    ```
 
-### 先决条件
+2. 打开 Android Studio，选择“Open an existing project”，然后选择克隆的项目目录。
 
-- [Android Studio](https://developer.android.com/studio) 4.1 或更高版本
-- [Git](https://git-scm.com/)
-- Android SDK 29 或更高版本
+3. 确保你已经安装了所需的 SDK 和库，然后点击“Sync Project with Gradle Files”。
 
-### 克隆仓库
+4. 连接你的 Android 设备或启动模拟器，然后点击“Run”按钮运行应用程序。
 
-首先，克隆此仓库到您的本地机器：
+## 使用方法
 
-```sh
-git clone https://github.com/Lian314/XingPing.git
-cd XingPing
+### 登录和注册
+- 启动应用后，你会看到登录界面。输入用户名和密码，点击“登录”按钮。如果没有账号，可以点击“注册”链接跳转到注册界面。
+
+### 星座信息查询
+- 登录成功后，导航到“星⭐萍”页面，通过下拉菜单选择星座。选择星座后，会显示该星座的基本信息、类型及个性特征。
+
+### 个人信息管理
+- 导航到“个人信息”页面，填写个人信息表单，包括昵称、生日、性别、MBTI类型、职业、微信号和QQ号。填写完成后，信息会自动保存到本地。
+
+### 时钟和日历
+- 导航到“人生几何”页面，可以查看当前时间和日期，并点击按钮获取随机祝福语。
+
+## 技术亮点
+
+### 使用Jetpack Compose构建UI
+- 应用使用Jetpack Compose构建现代化的响应式UI，简化了UI开发过程。通过@Composable函数定义UI组件，使用MaterialTheme进行主题管理。
+
+### 导航组件实现页面切换
+- 使用Jetpack Navigation组件实现页面之间的无缝切换，提升用户体验。通过NavController和NavHost定义导航图，使用composable函数定义各个页面。
+
+### 数据持久化
+- 应用程序使用SharedPreferences保存用户的个人信息，实现数据的持久化。通过SharedPreferences API读取和写入用户数据。
+
+## 软件架构图
+
+```plaintext
+ConstellationApp
+├── MainActivity.kt
+│   └── MainScreen
+│       └── NavHost
+├── AuthScreens.kt
+│   ├── LoginScreen
+│   └── RegisterScreen
+├── MoonScreen.kt
+│   └── MoonScreen
+├── StarScreen.kt
+│   └── StarScreen
+├── SunScreen.kt
+│   └── SunScreen
+├── ui
+│   ├── theme
+│   │   ├── Color.kt
+│   │   ├── Theme.kt
+│   │   └── Type.kt
+├── res
+│   ├── drawable
+│   │   ├── ic_moon.xml
+│   │   └── ic_sun.xml
+│   ├── layout
+│   │   └── activity_main.xml
+├── AndroidManifest.xml
+└── build.gradle.kts
+```
+
+## 开源许可
+
+本项目基于 [MIT 许可证](LICENSE) 开源。
