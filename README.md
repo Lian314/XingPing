@@ -8,7 +8,7 @@
 - 用户可以通过登录和注册界面进行账户的创建和登录。
 
 ### 星座信息查询
-- 用户可以选择星座并查看该星座的基本信息、星座类型及个性特征。
+- 用户可以选择星座并查看该星座的基本信息、个性特征以及联网导航至星座屋查看今日运势。
 
 ### 个人信息管理
 - 用户可以在“个人信息”界面填写和查看自己的基本信息，包括昵称、生日、性别、MBTI类型等。
@@ -36,7 +36,7 @@
 - 启动应用后，你会看到登录界面。输入用户名和密码，点击“登录”按钮。如果没有账号，可以点击“注册”链接跳转到注册界面。
 
 ### 星座信息查询
-- 登录成功后，导航到“星⭐萍”页面，通过下拉菜单选择星座。选择星座后，会显示该星座的基本信息、类型及个性特征。
+- 登录成功后，导航到“星⭐萍”页面，通过下拉菜单选择星座。选择星座后，会显示该星座的基本信息、个性特征和联网导航至星座屋查看今日运势。
 
 ### 个人信息管理
 - 导航到“个人信息”页面，填写个人信息表单，包括昵称、生日、性别、MBTI类型、职业、微信号和QQ号。填写完成后，信息会自动保存到本地。
@@ -59,31 +59,53 @@
 
 ```plaintext
 ConstellationApp
-├── MainActivity.kt
-│   └── MainScreen
-│       └── NavHost
-├── AuthScreens.kt
-│   ├── LoginScreen
-│   └── RegisterScreen
-├── MoonScreen.kt
-│   └── MoonScreen
-├── StarScreen.kt
-│   └── StarScreen
-├── SunScreen.kt
-│   └── SunScreen
-├── ui
-│   ├── theme
-│   │   ├── Color.kt
-│   │   ├── Theme.kt
-│   │   └── Type.kt
-├── res
-│   ├── drawable
-│   │   ├── ic_moon.xml
-│   │   └── ic_sun.xml
-│   ├── layout
-│   │   └── activity_main.xml
-├── AndroidManifest.xml
-└── build.gradle.kts
+├── .gradle
+├── .idea
+├── .kotlin
+├── app
+│   ├── build
+│   ├── src
+│   │   ├── androidTest
+│   │   │   └── main
+│   │   │       └── java
+│   │   │           └── com.example.constellationapp
+│   │   │               ├── ui.theme
+│   │   │               │   ├── Color.kt
+│   │   │               │   ├── Theme.kt
+│   │   │               │   └── Type.kt
+│   │   │               ├── MoonScreen.kt
+│   │   │               ├── SunScreen.kt
+│   │   │               ├── AuthScreens.kt
+│   │   │               ├── MainActivity.kt
+│   │   │               └── StarScreen.kt
+│   │   └── res
+│   │       ├── drawable
+│   │       ├── drawable-v24
+│   │       ├── layout
+│   │       ├── mipmap-anydpi-v26
+│   │       ├── mipmap-hdpi
+│   │       ├── mipmap-mdpi
+│   │       ├── mipmap-xhdpi
+│   │       ├── mipmap-xxhdpi
+│   │       ├── mipmap-xxxhdpi
+│   │       ├── raw
+│   │       ├── values
+│   │       └── xml
+│   │           └── AndroidManifest.xml
+│   └── test [unitTest]
+│       ├── .gitignore
+│       ├── build.gradle.kts
+│       └── proguard-rules.pro
+├── gradle
+│   ├── .gitignore
+│   ├── build.gradle.kts
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle.kts
+└── External Libraries
+    └── Scratches and Consoles
 ```
 
 ## 开源许可
