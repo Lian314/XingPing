@@ -108,6 +108,4 @@ ConstellationApp
     └── Scratches and Consoles
 ```
 
-## 开源许可
-
-本项目基于 [MIT 许可证](LICENSE) 开源。
+![屏幕截图 2025-01-14 165421](https://github.com/user-attachments/assets/dd9136ce-1ca7-4b9a-99df-8a46ecf3881d)
