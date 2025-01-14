@@ -57,55 +57,56 @@
 
 ## 软件架构图
 
+![架构](https://github.com/user-attachments/assets/6389b38b-c277-4d41-909f-0d4490cd4710)
+
 ```plaintext
 ConstellationApp
-├── .gradle
-├── .idea
-├── .kotlin
-├── app
-│   ├── build
-│   ├── src
-│   │   ├── androidTest
-│   │   │   └── main
-│   │   │       └── java
-│   │   │           └── com.example.constellationapp
-│   │   │               ├── ui.theme
-│   │   │               │   ├── Color.kt
-│   │   │               │   ├── Theme.kt
-│   │   │               │   └── Type.kt
-│   │   │               ├── MoonScreen.kt
-│   │   │               ├── SunScreen.kt
-│   │   │               ├── AuthScreens.kt
-│   │   │               ├── MainActivity.kt
-│   │   │               └── StarScreen.kt
-│   │   └── res
-│   │       ├── drawable
-│   │       ├── drawable-v24
-│   │       ├── layout
-│   │       ├── mipmap-anydpi-v26
-│   │       ├── mipmap-hdpi
-│   │       ├── mipmap-mdpi
-│   │       ├── mipmap-xhdpi
-│   │       ├── mipmap-xxhdpi
-│   │       ├── mipmap-xxxhdpi
-│   │       ├── raw
-│   │       ├── values
-│   │       └── xml
-│   │           └── AndroidManifest.xml
-│   └── test [unitTest]
-│       ├── .gitignore
-│       ├── build.gradle.kts
-│       └── proguard-rules.pro
-├── gradle
-│   ├── .gitignore
-│   ├── build.gradle.kts
-│   ├── gradle.properties
-│   ├── gradlew
-│   ├── gradlew.bat
-│   ├── local.properties
-│   └── settings.gradle.kts
-└── External Libraries
-    └── Scratches and Consoles
+├── .gradle                        
+├── .idea                          
+├── .kotlin                        
+├── app                           // 应用程序模块
+│   ├── build                     // 编译输出文件夹
+│   ├── src                       // 源代码目录
+│   │   ├── androidTest           // Android 测试代码目录
+│   │   ├── main                  // 主目录
+│   │   │    └── java             // Java 源代码目录
+│   │   │         └── com.example.constellationapp // 应用程序包名目录
+│   │   │               ├── ui.theme                // UI 主题相关代码
+│   │   │               │   ├── Color.kt            // 颜色定义文件
+│   │   │               │   ├── Theme.kt            // 主题定义文件
+│   │   │               │   └── Type.kt             // 字体样式定义文件
+│   │   │               ├── MoonScreen.kt           // 月亮屏幕代码（时间页面）
+│   │   │               ├── SunScreen.kt            // 太阳屏幕代码（个人信息页面）
+│   │   │               ├── AuthScreens.kt          // 认证屏幕代码（登陆注册页面）
+│   │   │               ├── MainActivity.kt         // 主活动代码
+│   │   │               └── StarScreen.kt           // 星星屏幕代码（星座页面）
+│   │   └── res                         // 资源文件目录
+│   │       ├── drawable                // 可绘制资源目录
+│   │       ├── drawable-v24            // 适用于 API 24 及以上的可绘制资源
+│   │       ├── layout                  // 布局文件目录
+│   │       ├── mipmap-anydpi-v26       // 适用于所有密度的启动图标资源（API 26 及以上）
+│   │       ├── mipmap-hdpi             // 高密度启动图标资源
+│   │       ├── mipmap-mdpi             // 中等密度启动图标资源
+│   │       ├── mipmap-xhdpi            // 超高密度启动图标资源
+│   │       ├── mipmap-xxhdpi           // 超超高密度启动图标资源
+│   │       ├── mipmap-xxxhdpi          // 超超超高密度启动图标资源
+│   │       ├── raw                     // 原始资源目录
+│   │       ├── values                  // 值资源目录（字符串、颜色、样式等）
+│   │       └── xml                     // XML 配置文件目录
+│   │           └── AndroidManifest.xml // Android 清单文件
+│   └── test [unitTest]            // 单元测试目录
+│       ├── .gitignore              
+│       ├── build.gradle.kts       
+│       └── proguard-rules.pro      
+├── gradle                         
+│   ├── .gitignore                
+│   ├── build.gradle.kts           // Gradle 构建脚本（Kotlin DSL）
+│   ├── gradle.properties          // Gradle 属性文件
+│   ├── gradlew                   
+│   ├── gradlew.bat                
+│   ├── local.properties            // 本地属性配置文件
+│   └── settings.gradle.kts         // Gradle 设置文件（Kotlin DSL）
+└── External Libraries              // 外部库
+    └── Scratches and Consoles      // 临时文件和控制台
 ```
 
-![屏幕截图 2025-01-14 165421](https://github.com/user-attachments/assets/dd9136ce-1ca7-4b9a-99df-8a46ecf3881d)
